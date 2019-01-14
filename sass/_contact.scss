@@ -1,0 +1,91 @@
+.header-contact {
+    background: url("../img/header-kontakt-bg.jpg") no-repeat top center fixed !important; //responsive img
+    min-height: 40vh !important;
+    background-size: cover;
+
+}
+
+.header-contact-container {
+
+    height: 40vh !important;
+}
+
+// ceo css za kontakt stranicu samo za izmenjene delove
+.contact {
+    max-width: 100%;
+    background-color: $color-white-dark;
+}
+
+.contact-container {
+    max-width: $width;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-white;
+    padding: 2rem;
+    @media(max-width:1024px){
+        max-width: $width-laptop;
+       
+    }
+    
+}
+
+.info-form-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @media(min-width:$width-mobile-s) and (max-width: 768px){
+        max-width:100%;
+        flex-direction: column;
+       
+    }
+
+}
+
+.info-wrapper {
+    flex: 0 0 50%;
+
+}
+
+.info-wrapper ul {
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.info-wrapper h3 {
+    color: $color-blue-dark;
+}
+
+
+.form-wrapper {
+    flex: 0 0 50%;
+}
+
+.form-wrapper ul {
+    list-style: none;
+}
+
+.form-wrapper ul li {
+
+    padding: 1rem 0;
+
+    &>* {
+        width: 100%;
+        height: 3rem;
+        background-color: $color-white-dark;
+        border: 0;
+    }
+}
+.form-wrapper button{
+    margin-bottom: 2rem;
+}
+
+.map-wrapper {
+    width: 100%;
+    // max-height: 60rem;
+    &>*{
+        width: 100%;
+    //     height: 100%;
+     }
+}

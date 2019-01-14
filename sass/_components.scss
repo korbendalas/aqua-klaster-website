@@ -1,0 +1,17 @@
+.card-button {
+    border: 2px solid $color-blue-dark;
+    border-radius: 0;
+    background-color: $color-blue-dark;
+    color: $color-white;
+    cursor: pointer;
+    padding: .8rem 2.5rem;
+    transition: all .2s;
+    font-size: 1.4rem;
+
+
+    &:hover {
+        background-color: $color-white;
+        border: 2px solid $color-blue-dark;
+        color: $color-blue-dark;
+    }
+}

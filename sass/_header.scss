@@ -1,0 +1,213 @@
+.header {
+    background: url("../img/header-bg.jpg") no-repeat center center fixed; //responsive img
+    min-height: 95vh;
+    background-size: cover;
+    
+}
+
+.header-container {
+    @media(max-width: 1036px) {
+        max-width: $width-laptop;
+
+    }
+
+    @media(max-width:878px) {
+        max-width: 100%;
+        margin: 0 1rem;
+        padding: 0;
+
+    }
+
+    max-width: $width;
+    height: 95vh;
+    margin: 0 auto;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+}
+
+.navigation {
+
+
+    background-color: $color-white;
+    opacity: .8;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media(min-width: $width-mobile-s) and (max-width: 878px) {
+
+        display: block;
+        position: relative;
+    }
+
+    &__menu {
+        margin-left: auto;
+
+        @media(min-width: $width-mobile-s) and (max-width: 878px) {
+            //for responsive menu
+            display: none;
+        }
+    }
+
+    &__menu ul {
+
+
+        list-style: none;
+        display: flex;
+
+        // kad se pojavi meni da se iz reda prebace u kolonu 
+        @media(min-width: $width-mobile-s) and (max-width: 878px) {
+
+            flex-direction: column;
+
+
+        }
+    }
+
+    &__menu ul a:link,
+    &__menu ul a:visited {
+        color: $color-blue-dark;
+        text-decoration: none;
+        font-size: 1.4rem;
+        padding: 2rem 1.5rem;
+        display: block;
+        transition: all 0.2s;
+        font-weight: bold;
+    }
+
+    &__menu ul a:hover {
+        color: $color-white;
+        background-color: $color-blue-light;
+    }
+
+
+
+
+    // ACTIVE 
+    #nav_active {
+        background-color: $color-blue-light;
+        color: $color-white;
+    }
+
+    #nav_active:hover {
+        color: $color-blue-dark;
+        background-color: $color-blue-light;
+    }
+
+}
+
+
+.show-menu-btn {
+   
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 1rem;
+    top: .8rem;
+
+    margin-right: 1rem;
+
+    @media(min-width: $width-mobile-s) and (max-width: 878px) {
+        display: block;
+
+    }
+}
+
+
+.show-menu-btn::before {
+    @media(min-width: $width-mobile-s) and (max-width: 878px) {
+
+
+        content: '\f0c9';
+        font-family: 'Font Awesome\ 5 Free';
+        font-weight: 900;
+    }
+}
+
+.show-menu-btn.aktivno::before {
+    @media(min-width: $width-mobile-s) and (max-width: 878px) {
+
+
+        content: '\f00d';
+        font-family: 'Font Awesome\ 5 Free';
+        font-weight: 900;
+    }
+}
+
+
+
+.header-info {
+    width: 100%;
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    &__heading-1 {
+        color: $color-white;
+        font-size: 7rem;
+        text-shadow: 4px 2px gray;
+
+        @media(max-width: 856px) {
+            font-size: 4.5rem;
+            text-align: center;
+        }
+    }
+
+    &__heading-2 {
+        font-size: 2rem;
+        background-color: $color-blue-light;
+        align-self: stretch;
+        text-align: center;
+    }
+
+    &__telefon {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__telefon img {}
+
+    &__telefon p {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: $color-white;
+        position: absolute;
+        top: .5rem;
+        left: 6rem;
+
+
+    }
+
+}
+
+
+
+// for jQuery 
+.prikazi-nav {
+    display: block;
+    margin-left: 0;
+    order: 3;
+    font-size: 1.7rem;
+    z-index: 11111;
+}
+
+.navigation-active {
+    opacity: 1;
+  
+    flex-direction: column;
+    -webkit-box-shadow: 2px 10px 56px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 10px 56px -6px rgba(0,0,0,0.75);
+box-shadow: 2px 10px 56px -6px rgba(0,0,0,0.75);
+ 
+}
+.remove-header-info{
+    z-index: -111;
+}

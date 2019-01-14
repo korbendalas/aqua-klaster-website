@@ -1,0 +1,128 @@
+.services {
+    background-color: $color-white-dark;
+    padding-top: 5rem;
+
+}
+
+.services-container {
+    max-width: $width;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    @media(max-width:1024px){
+        max-width: $width-laptop;
+       
+    }
+
+
+
+
+    @media(min-width:$width-mobile-s) and (max-width: 768px){
+        max-width:100%;
+        flex-direction: column;
+       
+    }
+
+}
+
+.card {
+    background-color: $color-white;
+    flex: 0 0 31%;
+    padding: .7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.card img {
+    width: 100%;
+    height: auto;   
+}
+.card h3 {
+    padding: 1.5rem 0;
+
+}
+.card p {
+    padding: 1.5rem 0;
+    font-size: $font-normal;
+    text-align: center;
+}
+
+// ////////////////////////////// OTHER SERVICES ////////////////////////////////////////// 
+
+
+.other-services{
+    background-color: $color-white-dark;
+    padding:1.5rem 0 5rem 0;
+    display:flex;
+    justify-content: center;
+   
+
+}
+
+// ////////////////////////// ABOUT-SERVICES //////////////////////////////////////////////// 
+
+.about-services{
+    margin-top: 5rem;
+}
+
+.about-services-container{
+
+    max-width: $width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+@media(max-width:1024px){
+    max-width: $width-laptop;
+   
+}
+
+@media(min-width:$width-mobile-s) and (max-width: 768px){
+    max-width:100%;
+    flex-direction: column;
+    margin:0 1rem;
+   
+}
+
+}
+.about-services-card{
+    flex: 0 0 48%;
+
+    &__heading{
+        font-size: 3rem;
+        font-weight: normal;
+        @media(max-width:1024px){
+           font-size: 2rem;
+           
+        }
+    }
+}
+.about-services-card >p{
+    padding: 1.8rem 0;
+    font-size: $font-normal;
+    text-align: justify;
+
+    @media(max-width:1024px){
+        padding: 0;
+       
+    }
+}
+#about-services-button{
+display:block;
+    margin-left: auto;
+    @media(min-width:$width-mobile-s) and (max-width: 768px){
+        margin: 2rem auto;
+       
+    }
+}
+.about-services-img{
+    flex: 0 0 48%;
+}
+.about-services-img img{
+    width: 100%;
+    height: auto;
+}

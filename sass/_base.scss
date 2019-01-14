@@ -1,0 +1,47 @@
+// COLOR VARIABLES
+$color-white: #FFF;
+$color-white-dark: #f1f1f1;
+
+$color-font-primary:#000;
+
+$color-blue-dark: #2a66c0;
+$color-blue-light: #26c9ff;
+
+// FONT VARIABLES
+$font-primary: 'Open Sans', sans-serif;
+$font-heading: 'Roboto', sans-serif;
+
+$font-normal:1.4rem;
+
+
+//width variable
+$width:80%;
+$width-laptop:95%;
+$width-tablet:100%;
+
+
+$width-mobile-s:320px;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; //1rem = 10px , 16px/10px = 62.5%
+}
+
+body{
+    
+    // margin: 0 auto;
+    font-family: $font-primary;
+    color: $color-font-primary;
+    line-height: 1.6;
+    background-color: $color-white;
+}
+::selection{
+    background:$color-blue-light;
+}

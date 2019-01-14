@@ -1,0 +1,98 @@
+.header-about {
+    background: url("../img/header-onama-bg.jpg") no-repeat top center fixed !important; //responsive img
+    min-height: 40vh !important;
+    background-size: cover;
+
+}
+
+.header-about-container {
+
+    height: 40vh !important;
+}
+.about-us{
+    max-width: 100%;
+    background-color: $color-white-dark;
+}
+
+.about-us-container{
+    
+max-width: $width;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-white;
+    padding: 2rem;
+    @media(max-width:1024px){
+        max-width: $width-laptop;
+       padding: 1rem;
+    }
+    @media(min-width:$width-mobile-s) and (max-width: 768px){
+        max-width:100%;
+        
+       
+    }
+}
+.about-us-text-and-video-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @media(max-width:1024px){
+        
+        flex-direction: column;
+       
+    }
+
+    @media(min-width:$width-mobile-s) and (max-width: 768px){
+        max-width:100%;
+        flex-direction: column;
+       
+    }
+}
+.about-us-text{
+    flex: 0 0 49%;
+    text-align: justify;
+    font-size: 1.4rem;
+    @media(max-width:1024px){
+        
+       margin-bottom: 1.3rem;
+       
+    }
+}
+.about-us-video{
+    flex: 0 0 49%;
+    @media(min-width:$width-mobile-s) and (max-width: 768px){
+      width: 100%;
+      
+    }
+}
+.about-us-video iframe{
+    width: 100%;
+    height: 40rem;
+    @media(min-width:$width-mobile-s) and (max-width: 425px){
+        height: 30rem;
+    }
+}
+
+.about-us-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+   
+}
+.about-us-gallery div {
+    flex: auto;
+    width: 20rem;
+   height: 14rem;
+    margin: .5vw;
+    @media(min-width:$width-mobile-s) and (max-width: 425px){
+        margin-top: 2rem;
+    }
+}
+.about-us-gallery div img {
+    width: 100%;
+    height: 100%;
+    @media(min-width:$width-mobile-s) and (max-width: 425px){
+       height: auto;
+      
+    }
+}
